@@ -1,0 +1,83 @@
+ .servicesNested { display: none; min-height: 100px; }  
+
+  @media (max-width: 1000px) 
+  {  
+      .servicesNested { display: none; padding: 5% calc(5% + (200 - 5) * ((100vw - 361px) / (1000-361))); } 
+      .below1000WidthServices { display: block; }   
+      .servicesNestedInner { display: flex; }
+      .servicesNestedInner > div { padding: 1%; } 
+  }  
+ 
+  @media (min-width: 1001px) 
+  {  
+      .servicesNested { display: none; padding: 3% 10% 0%; } 
+      .above1000WidthServices { display: flex; } 
+  }
+  
+  .servicesNested > div:nth-child(1){ padding: 3% 1% 3% 0%; }
+  .servicesNested > div:nth-child(2){ padding: 3% 1% 3% 1%; }
+  .servicesNested > div:nth-child(3){ padding: 3% 1% 3% 1%; }
+  .servicesNested > div:nth-child(4){ padding: 3% 0% 3% 1%; }
+  .servicesNestedInner { justify-content: center;  }
+  .serviceCaption { text-align: center; padding: 0rem 0.25rem; }
+
+  .servicesNestedInner > div > img { width: 100%; cursor: pointer; }
+
+  .topDealsContainer { padding: 3% 0% 0%; }
+  .topDealsCaption { font-size: 0.7em; text-align: center; color: #410a6c; margin: 0% 0% 2%; }
+
+  .reviewIndicators { text-align:center; display: none; margin: 2% }
+
+   /*3COLUMNS*/
+   .threecolumns
+   {
+     margin: 3% 10% 0%;
+   }
+ 
+   @media (max-width: 1000px) { .threecolumns { width: 97%; margin: 0 1.5%; } }  
+ 
+    /* Tablets Ipads portrait mode */
+   @media (max-width: 767px) { .threecolumnsNested { display: block; } }  
+ 
+   @media (min-width: 768px) { .threecolumnsNested { display: flex; width: 100%; margin: auto; } }
+ 
+   /* .servicesNested > div{ background:#eee; } .servicesNested > div:nth-child(odd){ background:#ddd; } border:#333 1px solid; */
+   .threecolumnsNested > div{ padding: 1%; } 
+ 
+   .threecolumnsNestedInner { width: 100%; }
+ 
+   @media (max-width: 767px) { .threecolumnsNestedInner { text-align: center; } }  
+   @media (min-width: 768px) { .threecolumnsNestedInner { text-align: center; } } 
+ 
+   .threecolumnsNestedInner > div > img { width: 40%; }
+ 
+   @media (max-width: 767px) 
+   {
+       .threecolumnsNestedInner > div > img { width: 30%; }
+   }
+ 
+   /* .threecolumnsNestedInner > div{ min-height: 75px; } 
+   .threecolumnsNestedInner > div:nth-child(odd){ min-height: 140px; } */
+    
+   .threecolumnsNestedInnerHeaderItem { font-size: 0.8em; font-weight: bold }
+   .threecolumnsNestedInnerTextItem { font-size: 0.8em; padding: 8% 6%; }
+ 
+   /*ourPartner margin: 3% 0;*/
+   .ourPartner { margin: 5% 0% 0%; }  
+   .ourPartnerCaption { font-size: 0.7em; text-align: center; color: #410a6c; margin: 0% 0% 2%; }
+   .ourPartnerNested { margin: 0% 10% 3%; }
+   .ourPartnerNestedInner > img { width: 100%; }
+ 
+   @media (max-width: 1000px) 
+   { .ourPartnerNested { width: 97%; margin: 0 1.5%; } }  
+
+   .reviewDot {
+    height: 7px;
+    width: 7px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid green; 
+    margin: 0% 0.7%;
+    cursor: pointer;
+  }

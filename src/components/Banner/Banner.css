@@ -1,0 +1,17 @@
+.bannerContainer
+{ 
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    height:30vw;
+    /* top: 68px */
+}
+
+.bannerInnerContainer 
+{ 
+    display: flex;
+    position: relative;
+    width: 100% 
+}
+
+.bannerImg { max-width: 100%; } 

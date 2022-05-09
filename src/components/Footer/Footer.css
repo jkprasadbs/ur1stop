@@ -1,0 +1,72 @@
+.footer
+  {  
+      min-height: 300px; 
+      font-size: 0.8em;
+      background-color: #ffffff;
+      position: relative;
+      top: 50px;
+  }  
+
+  .footerLogo
+  {
+      text-align: center;
+      padding: 2rem;
+  }
+
+  .footerNested
+  {
+      display: flex;
+      justify-content: space-around;
+      color: black;     
+      padding: 3% 0;     
+      border-width: 2px 0 0 0;
+      border-style: solid;
+      border-color: black;
+      /* width: 80%; */
+      margin: 0 1%;
+  }
+
+  .footerNestedInnerFlex { display: flex; margin: 5% 0; }
+
+  .footerNested { display: none; }   
+     
+  @media (max-width: 767px) 
+  { 
+    .footerNested { display: none; } 
+    .below767Width { display: block; }     
+    .footerNestedInner > img{ width: 20%; cursor: pointer; } 
+    .footerNestedInner { width: 40%; margin: 0 5%; }
+    .footerNestedInnerLogo { text-align: center; width: 95%; } 
+  }
+
+  @media (min-width: 768px) 
+  {  
+    .footerNested { display: none; }
+    .above767Width { display: flex; }     
+    .footerNestedInner > img{ width: 80%; cursor: pointer; }
+  }
+
+  @media (max-width: 1000px) 
+  { 
+    .footerNested { width: 97%; margin: 0 1.5%; }       
+  }  
+
+  .footerNestedInner > .footerNestedInnerHeaderItem { font-size: 0.7em; font-weight: bold; }
+  .footerNestedInner > .footerNestedInnerItem { font-size: 1em; margin: 7% 0; cursor: pointer; }
+
+  @media (max-width: 767px) 
+  { 
+    .footerNestedInner > .footerNestedInnerItem { font-size: 1.4em; margin: 12% 0; cursor: pointer; }
+  }
+
+  .socialMediaIcons
+  {  
+    display: flex;
+    /* width: 45.5%;
+    justify-content: flex-end; */
+    margin: 10% 0; 
+    align-items: center; 
+  }
+
+  .socialMediaIconsItem { margin-right: 5%; }
+  .socialMediaIconsItem > img{ height: 25px; cursor: pointer; vertical-align: middle; } 
